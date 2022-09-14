@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        .contenido {
+            display: inline-flex;
+            
+        }
+        .caja{
+
+            width: 150px;
+            height: 150px; 
+            margin-left: 15px;
+            margin-top: 15px;
+            background-color: {{ color }};
+            border: 3px solid;
+        }
+        
+        </style>
+</head>
+<body>
+    
+    
+       <div class="contenido">
+
+        {%for n in range (0, num)%}
+            <span class="caja"></span>
+        {%endfor%}
+            
+       </div>
+    
+</body>
+</html>
